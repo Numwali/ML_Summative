@@ -4,7 +4,11 @@ from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import numpy as np
 
-app = FastAPI()
+app = FastAPI(
+    title="Student Exam Score Predictor API",
+    description="This API predicts a student's exam score based on input lifestyle and academic factors.",
+    version="1.0.0"
+)
 
 # Allow CORS (cross-origin requests)
 app.add_middleware(
@@ -29,7 +33,7 @@ class ExamScoreInput(BaseModel):
     exercise_frequency: int = Field(..., ge=0, le=7)
     mental_health_rating: float = Field(..., ge=0.0, le=10.0)
 
-@app.post("/predict")
+@app.post("/predict_exam_score")
 def predict(data: ExamScoreInput):
     # Convert to model input format
     features = np.array([[ 
