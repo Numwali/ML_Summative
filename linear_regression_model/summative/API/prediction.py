@@ -21,6 +21,11 @@ app.add_middleware(
 # Load the saved model
 model = joblib.load("best_model_linear_regression.pkl")
 
+# Root route
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Student Exam Score Predictor API"}
+
 # Define the input schema
 class ExamScoreInput(BaseModel):
     age: int = Field(..., ge=10, le=60)
