@@ -52,4 +52,4 @@ def predict(data: ExamScoreInput):
 
     # Make prediction
     prediction = model.predict(scaled_features)
-    return {"predicted_exam_score": round(float(prediction[0]), 2)}
+    return {"predicted_exam_score": round(float(prediction[0]), 2)/5}
