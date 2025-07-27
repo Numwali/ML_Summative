@@ -12,29 +12,33 @@ This is a full-stack machine learning project aimed at predicting student exam p
 ## Project Structure
 
 linear_regression_model/
-│
-├── API/ # FastAPI backend
-│ ├── prediction.py # API endpoints & logic
-│ ├── scaler.pkl # Scaler used during training
-│ ├── best_model_linear_regression.pkl # Trained model
-│ ├── requirements.txt # Dependencies for backend
-│ └── render.yaml # Render.com deployment config
+├── API/                        # FastAPI backend
+│   ├── prediction.py           # API endpoints & logic
+│   ├── scaler.pkl              # Scaler used during training
+│   ├── best_model_linear_regression.pkl  # Trained ML model
+│   ├── requirements.txt        # Backend dependencies
+│   └── render.yaml             # Render.com deployment config
 │
 ├── FlutterApp/
-│ └── flutter_app/ # Flutter mobile application
-│ ├── lib/
-│ │ ├── main.dart
-│ │ └── screens/
-│ │ ├── input_screen.dart
-│ │ └── result_screen.dart
-│ ├── pubspec.yaml
-│ └── README.md # App-specific README
+│   └── flutter_app/            # Flutter mobile application
+│       ├── lib/
+│       │   ├── main.dart
+│       │   ├── screens/
+│       │   │   ├── input_screen.dart       # Form UI for user input
+│       │   │   └── result_screen.dart      # Displays predicted score
+│       │   ├── services/
+│       │   │   └── api_service.dart        # Handles API call logic
+│       │   └── widgets/
+│       │       └── custom_input_field.dart # Reusable input widget
+│       ├── pubspec.yaml
+│       └── README.md            # App-specific documentation
 │
-├── linear_regression/ # Training notebooks
-│ └── multivariate-checkpoint.ipynb
+├── linear_regression/          # Training notebooks
+│   └── multivariate-checkpoint.ipynb
 │
-├── student_habits_performance.csv # Dataset
-└── README.md # You're here
+├── student_habits_performance.csv  # Dataset
+└── README.md                   # Main project documentation
+
 
 
 ---
