@@ -5,7 +5,7 @@ This is a full-stack machine learning project aimed at predicting student exam p
 - **Task 1**: Build and evaluate machine learning models
 - **Task 2**: Deploy the best-performing model using FastAPI
 - **Task 3**: Build a mobile Flutter app to interact with the API
-- **Task 4**: Demo video
+- **Task 4**: Demo video link: (https://www.youtube.com/watch?v=b30mD0J6_4U)
 
 ---
 
@@ -76,7 +76,7 @@ linear_regression_model/
 - Scales input using the saved scaler before prediction.
 - Deployed live on Render.
 
-### 🔗 API Endpoints
+### API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -123,3 +123,9 @@ A mobile app built using Flutter to interact with the deployed API.
 cd FlutterApp/flutter_app
 flutter pub get
 flutter run
+---
+
+### Task 4: Video Demo
+Watch the 4-minute walkthrough of the full system:  
+[Video Demo of Model, API & Flutter App](https://www.youtube.com/watch?v=b30mD0J6_4U)
+
