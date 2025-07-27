@@ -49,11 +49,15 @@ This Flutter mobile application allows students to input lifestyle and academic 
   "mental_health_rating": 8
 }
 
-## Response:
+---
+
+## Response
 
  {
   "predicted_exam_score": 74.5
 }
+
+---
 
 
 ## SetUp: 
@@ -65,6 +69,8 @@ flutter pub get
 
 # Run the app
 flutter run
+
+---
 
 ## Folder Structure
 
